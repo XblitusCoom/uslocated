@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0a0f2c, #0d1a4d);
+  color: #66b2ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.android-icon {
+  font-size: 60px;
+  color: #00ff99;
+  margin-bottom: 10px;
+  animation: bounce 2s infinite;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #80cfff;
+  text-shadow: 0 0 10px rgba(0, 153, 255, 0.6);
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #3399ff;
+}
+
+.content {
+  flex: 1;
+  padding: 40px 20px;
+  display: grid;
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,153,255,0.5);
+}
+
+.about-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #80cfff;
+}
+
+.about-card p, .about-card li, .about-card span {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b3d9ff;
+}
+
+.about-card ul {
+  list-style: square inside;
+}
+
+/* Rating */
+.rating .stars {
+  font-size: 30px;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+.rating .rate-text {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #99ccff;
+}
+
+/* Testimoni */
+.testimonial {
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border-left: 4px solid #3399ff;
+}
+.testimonial span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #80cfff;
+  text-align: right;
+}
+
+/* Modder Info */
+.modder-info a {
+  color: #33ccff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.modder-info a:hover {
+  text-decoration: underline;
+  color: #66e0ff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.02);
+  color: #4da6ff;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }
+.fade-in:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
